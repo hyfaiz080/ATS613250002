@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #1e1b4b, #0f172a, #020617);
+    background-attachment: fixed;
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Glassmorphism Card (Kartu Transparan) */
+.glass-card {
+    background: rgba(30, 41, 59, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Navbar Custom */
+.navbar-custom {
+    background: rgba(15, 23, 42, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand-neon {
+    font-weight: 700;
+    background: linear-gradient(90deg, #38bdf8, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom Dark Table */
+.table-custom {
+    color: #e2e8f0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-custom thead th {
+    background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    padding: 14px 16px;
+}
+
+.table-custom thead th:first-child { border-top-left-radius: 12px; }
+.table-custom thead th:last-child { border-top-right-radius: 12px; }
+
+.table-custom tbody tr {
+    background: rgba(15, 23, 42, 0.4);
+    transition: all 0.3s ease;
+}
+
+.table-custom tbody tr:hover {
+    background: rgba(99, 102, 241, 0.2);
+    transform: translateY(-2px);
+}
+
+.table-custom td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 14px 16px;
+    vertical-align: middle;
+}
+
+/* Form Controls Dark */
+.form-control-dark, .form-select-dark {
+    background-color: rgba(15, 23, 42, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #f8fafc !important;
+    border-radius: 10px;
+}
+
+.form-control-dark:focus, .form-select-dark:focus {
+    border-color: #8b5cf6 !important;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.4) !important;
+}
+
+.form-control-dark::placeholder {
+    color: #94a3b8;
+}
+
+/* Tombol Gradient Neon */
+.btn-neon-primary {
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-neon-primary:hover {
+    background: linear-gradient(90deg, #4f46e5, #9333ea);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+    color: #fff;
+}
+
+.btn-neon-success {
+    background: linear-gradient(90deg, #10b981, #059669);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.btn-neon-success:hover {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+    color: #fff;
+}
